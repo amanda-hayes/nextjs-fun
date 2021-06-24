@@ -1,21 +1,17 @@
 import Head from "next/head";
+import ArticleList from "../components/ArticleList";
 import Layout from "../components/Layout";
 import Image from "next/image";
 import styles from "../styles/Layout.module.css";
 
 export default function Home({ articles }) {
-  console.log(articles);
   return (
     <div>
       <Head>
         <title>DIY How-Tos</title>
         <meta name="keywords" content="homeownership, diy" />
       </Head>
-      <h1>Welcome!</h1>
-      <p>
-        Here you will find no-nonsense tips and tricks for completing all of
-        your home projects.
-      </p>
+      <ArticleList articles={articles} />
     </div>
   );
 }
