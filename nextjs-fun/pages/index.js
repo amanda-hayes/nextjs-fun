@@ -1,8 +1,5 @@
 import Head from "next/head";
 import ArticleList from "../components/ArticleList";
-import Layout from "../components/Layout";
-import Image from "next/image";
-import styles from "../styles/Layout.module.css";
 
 export default function Home({ articles }) {
   return (
